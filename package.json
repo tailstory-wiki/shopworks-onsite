@@ -1,0 +1,10 @@
+{
+  "name": "shopworks-onsite-docs",
+  "private": true,
+  "scripts": {
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
