@@ -1,0 +1,20 @@
+name: Publish docs
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - "docs/**"
+      - ".github/workflows/publish.yaml"
+
+jobs:
+  build-and-publish:
+    uses: tailstory-wiki/builder/.github/workflows/build.yaml@main
+    with:
+      repo_slug: shopworks-onsite
+    secrets:
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
