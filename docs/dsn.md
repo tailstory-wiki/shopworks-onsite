@@ -3,10 +3,6 @@ layout: partial.njk
 title: OnSite Shipping DSNs
 ---
 
-# OnSite
-
-## Notes
-
 > [!WARNING]
 > OnSite v10.0 requires FileMaker v19.0, which has dropped support for x86.<br />
 > To avoid conflicting with the existing 32 bit DSN, the 64 bit DSN was created with an `64` suffix.<br />
