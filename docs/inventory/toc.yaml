@@ -1,9 +1,0 @@
-entries:
-  - title: Overview
-    page: index
-  - section: Reports
-    pages:
-      - title: Reports
-        page: reports
-      - title: Quarterly
-        page: reports/quarterly
